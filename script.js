@@ -138,3 +138,9 @@ function updateMaxMagic() {
 
   document.getElementById("magia-maximo").value = Math.floor(pod / 5);
 }
+
+function updateUnarmedCombat() {
+  document.getElementById("desarmado-regular").value = document.getElementById("lutar-brigar").value;
+  document.getElementById("desarmado-dificil").value = document.getElementById("lutar-brigar-minor").value;
+  document.getElementById("desarmado-extremo").value = document.getElementById("lutar-brigar-minor2").value;
+}
