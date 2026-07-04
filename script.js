@@ -52,3 +52,24 @@ document.getElementById("mythos-de-cthulhu").addEventListener("input", updateSan
 document.getElementById("sorte-atual").addEventListener("click", () => {
   document.getElementById("sorte-atual").value = rollNormal();
 });
+
+function updateMoveRate() {
+  const forca = Number(document.getElementById("for").value);
+  const destreza = Number(document.getElementById("des").value);
+  const tamanho = Number(document.getElementById("tam").value);
+
+  // Não calcula enquanto algum atributo ainda estiver vazio
+  if (!forca || !destreza || !tamanho) return;
+
+  let mov;
+
+  if (forca < tamanho && destreza < tamanho) {
+    mov = 7;
+  } else if (forca > tamanho && destreza > tamanho) {
+    mov = 9;
+  } else {
+    mov = 8;
+  }
+
+  document.getElementById("taxa-de-mov").value = mov;
+}
