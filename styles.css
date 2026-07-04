@@ -1282,3 +1282,39 @@
     width:50px;
     height:20px
 }
+
+/* combate */
+
+#bonus-de-dano {
+    left:845px;
+    top:1092px;
+    width:70px;
+    font-size:14px;
+}
+
+#corpo {
+    left:855px;
+    top:1145px;
+    width:50px;
+}
+
+#esquiva {
+    left:843px;
+    top:1190px;
+    width:40px;
+    height:40px;
+}
+
+#esquiva-minor {
+    left:888px;
+    top:1190px;
+    width:30px;
+    height:20px;
+}
+
+#esquiva-minor2 {
+    left:888px;
+    top:1212px;
+    width:30px;
+    height:20px;
+}
