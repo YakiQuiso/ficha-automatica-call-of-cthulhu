@@ -18,3 +18,18 @@ function rollNormal() {
 function rollSpecial() {
   return (d6() + d6() + 6) * 5;
 }
+
+// Updates the three boxes for one attribute
+function updateStat(id, value) {
+  document.getElementById(id).value = value;
+  document.getElementById(`${id}-top`).value = Math.floor(value / 2);
+  document.getElementById(`${id}-bottom`).value = value / 5;
+
+  updateMoveRate();
+  updateMaxHealth();
+  updateDamageBonusAndBuild();
+  updateSanity();
+  updateMaxMagic();
+  updateNativeLanguage();
+  updateDodge();
+}
