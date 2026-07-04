@@ -100,3 +100,33 @@ function updateSanity() {
     document.getElementById("sanidade-atual").value = Math.min(pod, maxSanity);
   }
 }
+
+function updateDamageBonusAndBuild() {
+  const forValue = Number(document.getElementById("for").value);
+  const tamValue = Number(document.getElementById("tam").value);
+
+  // Wait until both values exist
+  if (!forValue || !tamValue) return;
+
+  const total = forValue + tamValue;
+
+  const bonusInput = document.getElementById("bonus-de-dano");
+  const corpoInput = document.getElementById("corpo");
+
+  if (total >= 2 && total <= 64) {
+    bonusInput.value = "-2";
+    corpoInput.value = "-2";
+  } else if (total >= 65 && total <= 84) {
+    bonusInput.value = "-1";
+    corpoInput.value = "-1";
+  } else if (total >= 85 && total <= 124) {
+    bonusInput.value = "Nenhum";
+    corpoInput.value = "0";
+  } else if (total >= 125 && total <= 164) {
+    bonusInput.value = "+1d4";
+    corpoInput.value = "+1";
+  } else if (total >= 165 && total <= 204) {
+    bonusInput.value = "+1d6";
+    corpoInput.value = "+2";
+  }
+}
