@@ -130,3 +130,11 @@ function updateDamageBonusAndBuild() {
     corpoInput.value = "+2";
   }
 }
+
+function updateMaxMagic() {
+  const pod = Number(document.getElementById("pod").value);
+
+  if (!pod) return;
+
+  document.getElementById("magia-maximo").value = Math.floor(pod / 5);
+}
