@@ -73,3 +73,15 @@ function updateMoveRate() {
 
   document.getElementById("taxa-de-mov").value = mov;
 }
+
+function updateMaxHealth() {
+  const con = Number(document.getElementById("con").value);
+  const tam = Number(document.getElementById("tam").value);
+
+  // Wait until both values exist
+  if (!con || !tam) return;
+
+  const maxHealth = Math.floor((con + tam) / 10);
+
+  document.getElementById("vida-maxima").value = maxHealth;
+}
