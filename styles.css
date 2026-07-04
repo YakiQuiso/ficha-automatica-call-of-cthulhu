@@ -261,3 +261,255 @@
     width:20px;
     height:10px;
 }
+
+/* coluna 1 */
+
+#antropologia {
+    left:230px;
+    top:545px;
+}
+
+#antropologia-minor {
+    left:260px;
+    top:545px;
+}
+
+#antropologia-minor2 {
+    left:260px;
+    top:560px;
+}
+
+#armas-de-fogo-pistola {
+    left:230px;
+    top:577px;
+}
+
+#armas-de-fogo-pistola-minor {
+    left:260px;
+    top:577px;
+}
+
+#armas-de-fogo-pistola-minor2 {
+    left:260px;
+    top:592px;
+}
+
+#armas-de-fogo-rifle {
+    left:230px;
+    top:610px;
+}
+
+#armas-de-fogo-rifle-minor {
+    left:260px;
+    top:610px;
+}
+
+#armas-de-fogo-rifle-minor2 {
+    left:260px;
+    top:625px;
+}
+
+#arqueologia {
+    left:230px;
+    top:645px;
+}
+
+#arqueologia-minor {
+    left:260px;
+    top:645px;
+}
+
+#arqueologia-minor2 {
+    left:260px;
+    top:660px;
+}
+
+#arremessar {
+    left:230px;
+    top:677px;
+}
+
+#arremessar-minor {
+    left:260px;
+    top:677px;
+}
+
+#arremessar-minor2 {
+    left:260px;
+    top:693px;
+}
+
+#arte-oficio-text {
+    left:90px;
+    top:715px;
+}
+
+#arte-oficio {
+    left:230px;
+    top:710px;
+}
+
+#arte-oficio-minor {
+    left:260px;
+    top:710px;
+}
+
+#arte-oficio-minor2 {
+    left:260px;
+    top:726px;
+}
+
+#pericia-custom1-text {
+    left:90px;
+    top:745px;
+}
+
+#pericia-custom1-number {
+    left:230px;
+    top:745px;
+}
+
+#pericia-custom1-number-minor {
+    left:260px;
+    top:745px;
+}
+
+#pericia-custom1-number-minor2 {
+    left:260px;
+    top:760px;
+}
+
+#pericia-custom2-text {
+    left:90px;
+    top:780px;
+}
+
+#pericia-custom2-number {
+    left:230px;
+    top:777px;
+}
+
+#pericia-custom2-number-minor {
+    left:260px;
+    top:777px;
+}
+
+#pericia-custom2-number-minor2 {
+    left:260px;
+    top:793px;
+}
+
+#pericia-custom3-text {
+    left:90px;
+    top:815px;
+}
+
+#pericia-custom3-number {
+    left:230px;
+    top:810px;
+}
+
+#pericia-custom3-number-minor {
+    left:260px;
+    top:810px;
+}
+
+#pericia-custom3-number-minor2 {
+    left:260px;
+    top:825px;
+}
+
+#avaliacao {
+    left:230px;
+    top:845px;
+}
+
+#avaliacao-minor {
+    left:260px;
+    top:845px;
+}
+
+#avaliacao-minor2 {
+    left:260px;
+    top:860px;
+}
+
+#cavalgar {
+    left:230px;
+    top:877px;
+}
+
+#cavalgar-minor {
+    left:260px;
+    top:877px;
+}
+
+#cavalgar-minor2 {
+    left:260px;
+    top:893px;
+}
+
+#charme {
+    left:230px;
+    top:910px;
+}
+
+#charme-minor {
+    left:260px;
+    top:910px;
+}
+
+#charme-minor2 {
+    left:260px;
+    top:925px;
+}
+
+#chaveiro {
+    left:230px;
+    top:945px;
+}
+
+#chaveiro-minor {
+    left:260px;
+    top:945px;
+}
+
+#chaveiro-minor2 {
+    left:260px;
+    top:960px;
+}
+
+#ciencia {
+    left:230px;
+    top:977px;
+}
+
+#ciencia-minor {
+    left:260px;
+    top:977px;
+}
+
+#ciencia-minor2 {
+    left:260px;
+    top:993px;
+}
+
+#pericia-custom4-text {
+    left:90px;
+    top:1012px;
+}
+
+#pericia-custom4-number {
+    left:230px;
+    top:1010px;
+}
+
+#pericia-custom4-number-minor {
+    left:260px;
+    top:1010px;
+}
+
+#pericia-custom4-number-minor2 {
+    left:260px;
+    top:1025px;
+}
