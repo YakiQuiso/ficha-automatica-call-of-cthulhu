@@ -218,3 +218,35 @@
     left:885px;
     top:230px;
 }
+
+/* status */
+
+#vida-maxima {
+    left:160px;
+    top:265px;
+    width:70px;
+}
+
+#sanidade-atual {
+    left:490px;
+    top:265px;
+    width:70px;
+}
+
+#sanidade-maxima {
+    left:570px;
+    top:265px;
+    width:70px;
+}
+
+#sorte-atual {
+    left:285px;
+    top:405px;
+    width:70px;
+}
+
+#magia-maximo {
+    left:790px;
+    top:365px;
+    width:70px;
+}
