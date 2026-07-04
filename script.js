@@ -171,3 +171,17 @@ document.querySelectorAll(".pericia").forEach(skill => {
     }
   });
 });
+
+function updateNativeLanguage() {
+  const edu = Number(document.getElementById("edu").value);
+
+  const nativeLanguage = document.getElementById("lingua-natural");
+  nativeLanguage.value = edu;
+
+  // Update half and fifth values
+  const half = document.getElementById("lingua-natural-minor");
+  const fifth = document.getElementById("lingua-natural-minor2");
+
+  if (half) half.value = Math.floor(edu / 2);
+  if (fifth) fifth.value = Math.floor(edu / 5);
+}
