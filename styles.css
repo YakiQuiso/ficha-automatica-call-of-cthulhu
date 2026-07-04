@@ -1,0 +1,33 @@
+.background {
+    width: 100%;
+    display: block;
+}
+
+.sheet{
+    position: relative;
+    width: 1000px;
+    margin: auto;
+    width:min(1000px,95vw);
+}
+
+.sheet input {
+    position:absolute;
+    font-size: 14px;
+    background:transparent;
+    border:none;
+    text-decoration: none;
+    text-align: center;
+}
+
+.text {
+    width: 250px;
+}
+
+.number {
+    width: 50px;
+    height: 50px;
+}
+
+.sheet input.pericia-custom { 
+    text-align: left; 
+}
