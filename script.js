@@ -200,3 +200,38 @@ function updateDodge() {
   document.getElementById("esquiva-minor").value = Math.floor(dodge / 2);
   document.getElementById("esquiva-minor2").value = Math.floor(dodge / 5);
 }
+
+document.querySelectorAll(".pericia, .pericia-minor, #idade").forEach(input => {
+
+  // Prevent invalid keys
+  input.addEventListener("keydown", e => {
+    const allowed = [
+      "Backspace",
+      "Delete",
+      "ArrowLeft",
+      "ArrowRight",
+      "Tab"
+    ];
+
+    if (!/[0-9]/.test(e.key) && !allowed.includes(e.key)) {
+      e.preventDefault();
+    }
+  });
+
+  // Prevent invalid pasted content
+  input.addEventListener("input", () => {
+    input.value = input.value.replace(/\D/g, "");
+  });
+
+});
+
+["lutar-brigar", "lutar-brigar-minor", "lutar-brigar-minor2"].forEach(id => {
+  document.getElementById(id).addEventListener("input", updateUnarmedCombat);
+});
+
+document.querySelectorAll(
+    'input:not(#nome):not(#jogador):not(#ocupacao):not(#idade):not(#sexo):not(#residencia):not(#nascimento):not(.pericia):not(.pericia-custom)'
+  )
+  .forEach(input => {
+    input.readOnly = true;
+  });
