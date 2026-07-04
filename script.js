@@ -144,3 +144,30 @@ function updateUnarmedCombat() {
   document.getElementById("desarmado-dificil").value = document.getElementById("lutar-brigar-minor").value;
   document.getElementById("desarmado-extremo").value = document.getElementById("lutar-brigar-minor2").value;
 }
+
+document.querySelectorAll(".pericia").forEach(skill => {
+  skill.addEventListener("input", () => {
+    const value = Number(skill.value) || 0;
+
+    const half = skill.nextElementSibling;
+    const fifth = half.nextElementSibling;
+
+    if (half && half.classList.contains("pericia-minor")) {
+      half.value = Math.floor(value / 2);
+    }
+
+    if (fifth && fifth.classList.contains("pericia-minor")) {
+      fifth.value = Math.floor(value / 5);
+    }
+
+    // Keep Fight (Brawl) synchronized with the weapon table
+    if (skill.id === "lutar-brigar") {
+      updateUnarmedCombat();
+    }
+
+    // Recalculate sanity if Cthulhu Mythos changed
+    if (skill.id === "mythos-de-cthulhu") {
+      updateSanity();
+    }
+  });
+});
