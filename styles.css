@@ -250,3 +250,14 @@
     top:365px;
     width:70px;
 }
+
+/* pericias */
+
+.pericia {
+    width:30px;
+}
+
+.pericia-minor {
+    width:20px;
+    height:10px;
+}
