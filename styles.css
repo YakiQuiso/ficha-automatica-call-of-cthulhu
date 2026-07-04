@@ -1259,3 +1259,26 @@
     left:905px;
     top:1025px;
 }
+
+/* armas */
+
+#desarmado-regular {
+    left:200px;
+    top:1098px;
+    width:50px;
+    height:20px
+}
+
+#desarmado-dificil {
+    left:265px;
+    top:1098px;
+    width:50px;
+    height:20px
+}
+
+#desarmado-extremo {
+    left:330px;
+    top:1098px;
+    width:50px;
+    height:20px
+}
