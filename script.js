@@ -185,3 +185,18 @@ function updateNativeLanguage() {
   if (half) half.value = Math.floor(edu / 2);
   if (fifth) fifth.value = Math.floor(edu / 5);
 }
+
+function updateDodge() {
+  const des = Number(document.getElementById("des").value);
+
+  const dodge = Math.floor(des / 2);
+
+  document.getElementById("esquivar").value = dodge;
+  document.getElementById("esquivar-minor").value = Math.floor(dodge / 2);
+  document.getElementById("esquivar-minor2").value = Math.floor(dodge / 5);
+
+  // Sync with the combat section
+  document.getElementById("esquiva").value = dodge;
+  document.getElementById("esquiva-minor").value = Math.floor(dodge / 2);
+  document.getElementById("esquiva-minor2").value = Math.floor(dodge / 5);
+}
