@@ -33,3 +33,22 @@ function updateStat(id, value) {
   updateNativeLanguage();
   updateDodge();
 }
+
+// Add click event to normal attributes
+normalStats.forEach(id => {
+  document.getElementById(id).addEventListener("click", () => {
+    updateStat(id, rollNormal());
+  });
+});
+
+// Add click event to special attributes
+specialStats.forEach(id => {
+  document.getElementById(id).addEventListener("click", () => {
+    updateStat(id, rollSpecial());
+  });
+});
+
+document.getElementById("mythos-de-cthulhu").addEventListener("input", updateSanity);
+document.getElementById("sorte-atual").addEventListener("click", () => {
+  document.getElementById("sorte-atual").value = rollNormal();
+});
