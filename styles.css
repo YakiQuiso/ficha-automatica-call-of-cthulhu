@@ -31,3 +31,48 @@
 .sheet input.pericia-custom { 
     text-align: left; 
 }
+
+/* investigador */
+
+#nome {
+    left: 140px;
+    top: 90px;
+    text-align: start;
+}
+
+#jogador {
+    left:180px;
+    top:115px;
+    text-align: start;
+}
+
+#ocupacao {
+    left:170px;
+    top:140px;
+    text-align: start;
+}
+
+#idade {
+    left:130px;
+    top:170px;
+    width:100px;
+}
+
+#sexo {
+    left:320px;
+    top:170px;
+    width:120px;
+    text-align: start;
+}
+
+#residencia {
+    left:180px;
+    top:200px;
+    text-align: start;
+}
+
+#nascimento {
+    left:190px;
+    top:225px;
+    text-align: start;
+}
