@@ -85,3 +85,18 @@ function updateMaxHealth() {
 
   document.getElementById("vida-maxima").value = maxHealth;
 }
+
+function updateSanity() {
+  const pod = Number(document.getElementById("pod").value);
+  const mythos = Number(document.getElementById("mythos-de-cthulhu").value) || 0;
+
+  const maxSanity = 99 - mythos;
+
+  // Update maximum sanity
+  document.getElementById("sanidade-maxima").value = maxSanity;
+
+  // Current sanity starts from POD, but can't exceed the maximum
+  if (pod) {
+    document.getElementById("sanidade-atual").value = Math.min(pod, maxSanity);
+  }
+}
